@@ -1,0 +1,15 @@
+## Today's Progress
+
+- Created and processed a 100,000-row Indian retail sales dataset.
+- Loaded the dataset into DuckDB.
+- Executed 5 analytical SQL queries using DuckDB.
+- Ran the same 5 operations using Pandas and Polars.
+- Benchmarked the execution time of all three tools.
+- Compared Pandas, DuckDB and Polars based on 5 criteria.
+- Added benchmark results and documentation as evidence.
+
+## Evidence
+
+- `comparison_table.md`
+- `README.md`
+- Terminal screenshot showing benchmark results
