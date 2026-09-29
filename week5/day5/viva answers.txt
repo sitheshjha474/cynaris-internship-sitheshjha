@@ -1,0 +1,17 @@
+1. What you built today — Viva Q1
+
+Today I built a data processing benchmark using a 100,000-row retail sales CSV dataset. I used Pandas, DuckDB, and Polars to perform the same five analytical operations: total sales, sales by category, average profit by city, payment-method counts, and sales by date.
+
+I chose DuckDB because it allows analytical SQL directly on CSV data, and Polars because it provides a fast DataFrame-based alternative to Pandas. I kept the operations the same across all three tools so that the speed comparison would be fair.
+
+2. Hardest problem — Viva Q2
+
+The hardest part was making sure all three tools were performing the same operations on the same 100,000-row dataset. The syntax is different between Pandas, DuckDB, and Polars, so I had to translate each operation carefully.
+
+I solved this by defining five common analytical questions first and then implementing each question separately in Pandas, DuckDB SQL, and Polars. I also measured the execution time using Python's time.perf_counter().
+
+3. One more day — Viva Q3
+
+With one more day, I would improve the benchmark by testing larger datasets such as 500,000 or 1 million rows. I would also run each query multiple times and calculate the average execution time instead of relying on a single run.
+
+I would also add memory-usage measurements and create a small visualization comparing the performance of the three tools.
