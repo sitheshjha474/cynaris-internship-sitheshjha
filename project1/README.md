@@ -264,8 +264,170 @@ The planned next stages of the project are:
 * Git
 * GitHub
 
-## Project Status
+### Checkpoint 3 – Deep-Dive Analysis
 
-**Checkpoint 2 — Data Pipeline + Baseline Metrics**
+Customer Segmentation, RFM Analysis & Cohort Analysis
 
-The repeatable data pipeline, baseline metric calculations, SQL analysis queries, and Git-based version control have been established.
+1. Overview
+
+This checkpoint focuses on conducting a deeper analysis of customer behavior using segmentation, RFM analysis, cohort analysis, and customer-level performance analysis.
+
+The analysis was performed using the available sales transaction and customer datasets. The objective was to identify valuable customer groups, understand customer retention patterns, and identify customers that may require retention attention.
+
+2. Objectives
+
+Segment customers based on purchasing behavior.
+Identify high-value and at-risk customer groups.
+Analyze customer revenue contribution across segments.
+Measure customer churn across different segments.
+Analyze customer retention using cohort analysis.
+Compare customer behavior across cities and sales channels.
+Document assumptions and limitations of the analysis.
+
+3. Methodology
+
+The analysis followed these steps:
+
+Loaded the processed sales and customer datasets.
+Calculated customer-level purchasing metrics.
+Performed RFM-style customer segmentation.
+Classified customers into behavioral segments.
+Compared revenue and churn across segments.
+Created monthly customer cohorts based on first purchase month.
+Calculated retention rates for each cohort.
+Performed additional city and channel-level analysis.
+Generated CSV summaries and visualization outputs.
+
+4. RFM Analysis
+
+RFM analysis was used to evaluate customers using:
+
+Recency – how recently a customer made a purchase.
+Frequency – customer purchasing activity.
+Monetary – total customer revenue contribution.
+
+Customers were scored and grouped into the following segments:
+
+Champions
+Loyal High Value
+At Risk High Value
+At Risk Low Engagement
+Frequent Customers
+Potential Customers
+
+5. Customer Segmentation Results
+
+The analysis segmented 200 customers into six groups:
+
+Segment	Customers	Percentage
+Frequent Customers	55	27.5%
+At Risk High Value	52	26.0%
+Loyal High Value	25	12.5%
+Champions	23	11.5%
+At Risk Low Engagement	23	11.5%
+Potential Customers	22	11.0%
+
+The largest customer group was Frequent Customers, representing 27.5% of the customer base. The At Risk High Value group represented 26% of customers and contributed a substantial portion of total revenue.
+
+6. Revenue Analysis by Segment
+
+Approximate revenue contribution by segment:
+
+Segment	Revenue
+At Risk High Value	₹2.58M
+Frequent Customers	₹1.62M
+Loyal High Value	₹1.27M
+Champions	₹1.16M
+At Risk Low Engagement	₹0.71M
+Potential Customers	₹0.67M
+
+The At Risk High Value segment generated the highest revenue contribution. This indicates that customers with high historical value but lower recent engagement represent an important retention area.
+
+7. Churn Analysis
+
+Approximate churn rates by segment were:
+
+Segment	Churn Rate
+Potential Customers	4.5%
+Champions	4.3%
+At Risk High Value	3.8%
+Frequent Customers	3.6%
+At Risk Low Engagement	0%
+Loyal High Value	0%
+
+The results show differences in churn across customer segments. High-value customers should be monitored separately because churn among these customers can have a larger revenue impact.
+
+8. Cohort Analysis
+
+Customers were grouped into cohorts based on their first purchase month.
+
+For each cohort, monthly retention was calculated by tracking whether customers made purchases in subsequent months.
+
+The cohort analysis showed:
+
+Initial cohort retention is 100% because customers are counted in their first purchase month.
+Older cohorts show decreasing retention over subsequent months.
+Newer cohorts contain fewer observed future months.
+Blank cells in the cohort matrix represent periods that have not yet occurred for newer cohorts and should not be interpreted as zero retention.
+
+The cohort heatmap provides a visual representation of customer retention over time.
+
+9. City and Channel Analysis
+
+Customer and sales data were also analyzed by:
+
+City
+Acquisition channel
+Sales channel
+
+These comparisons provide additional context about where customers are located and how they interact with the business.
+
+The analysis can be used to identify differences in customer value and engagement across geographic and acquisition groups.
+
+10. Key Findings
+
+The customer base contains six distinct behavioral segments.
+Frequent Customers form the largest segment with 55 customers.
+At Risk High Value customers represent 52 customers and contribute the highest segment-level revenue.
+Champions and Loyal High Value customers show relatively low observed churn.
+Cohort analysis indicates that retention generally decreases as the time from the first purchase increases.
+Customer and channel-level analysis provides additional context for understanding revenue and engagement patterns.
+11. Assumptions and Limitations
+
+The supplied datasets are retail/customer/product datasets rather than property-market datasets.
+Therefore, this checkpoint focuses on customer and sales analytics rather than real-estate valuation.
+The sales transaction dataset contains exactly five transactions per customer, so transaction frequency has limited differentiation between customers.
+RFM segmentation should therefore be interpreted mainly through recency and monetary behavior, with customer-level order information used as additional context.
+Cohort retention is limited to the available transaction period.
+The analysis is based on historical data and does not represent live customer behavior.
+
+12. Output Files
+
+The analysis generated the following outputs:
+
+project1/report/
+├── customer_rfm_segmentation.csv
+├── segment_summary.csv
+├── segment_revenue.png
+├── segment_churn.png
+├── cohort_retention.csv
+├── cohort_retention_heatmap.png
+├── city_summary.csv
+└── channel_summary.csv
+13. Technologies Used
+
+Python
+Pandas
+NumPy
+Matplotlib
+Seaborn
+Statistical and exploratory analysis techniques
+Git and GitHub
+
+14. Conclusion
+
+Checkpoint 3 extends the baseline analysis by providing customer-level segmentation, revenue and churn analysis, and cohort-based retention analysis.
+
+The results provide a deeper understanding of customer behavior and identify high-value and potentially at-risk customer groups. These insights can support future customer retention analysis and business decision-making.
+
+Checkpoint 3 Status: Completed
