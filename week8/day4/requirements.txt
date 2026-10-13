@@ -1,9 +1,9 @@
+
 fastapi
 uvicorn
-pandas
-pandasai
-pandasai-litellm
-plotly
+pandasai==3.0.0
+pandasai-litellm==0.0.1
 python-multipart
+plotly
 ollama
 python-pptx
