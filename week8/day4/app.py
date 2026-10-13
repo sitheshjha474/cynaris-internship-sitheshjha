@@ -5,7 +5,10 @@ import io
 import pandas as pd
 import pandasai as pai
 import plotly.express as px
-import ollama
+try:
+    import ollama
+except ImportError:
+    ollama = None
 
 from fastapi import FastAPI, UploadFile, File, Form
 from fastapi.responses import FileResponse, StreamingResponse
