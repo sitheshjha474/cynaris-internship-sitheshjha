@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+pandas
+pandasai
+pandasai-litellm
+plotly
+python-multipart
+ollama
+python-pptx
