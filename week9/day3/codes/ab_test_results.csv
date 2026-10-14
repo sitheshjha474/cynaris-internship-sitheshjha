@@ -1,0 +1,3 @@
+variant,sample_size,conversions,conversion_rate
+A_Control,5000,577,0.1154
+B_Treatment,5000,685,0.137
