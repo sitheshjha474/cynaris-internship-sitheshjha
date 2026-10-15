@@ -1,0 +1,8 @@
+{
+    "dataset": "sklearn_diabetes",
+    "rows": 442,
+    "features": 10,
+    "target": "disease_progression",
+    "training_rows": 353,
+    "testing_rows": 89
+}
