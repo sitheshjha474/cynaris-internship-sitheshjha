@@ -1,0 +1,10 @@
+{
+    "total_transactions": 1000,
+    "z_score_anomalies": 10,
+    "iqr_anomalies": 25,
+    "isolation_forest_anomalies": 25,
+    "combined_anomalies": 17,
+    "z_score_threshold": 3,
+    "iqr_multiplier": 1.5,
+    "isolation_forest_contamination": 0.025
+}
