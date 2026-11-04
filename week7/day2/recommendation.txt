@@ -1,0 +1,10 @@
+BUSINESS STAKEHOLDER RECOMMENDATION
+===================================
+
+I would recommend SweetViz for business stakeholders.
+
+The main reason is that SweetViz creates a structured and interactive HTML report that combines visualizations with statistical information. Business stakeholders can review important variables, distributions, comparisons, and relationships without needing to understand Python code.
+
+AutoViz is also useful for analysts because it quickly generates multiple visualizations and helps with exploratory analysis.
+
+Therefore, SweetViz can be used for presenting EDA findings to business stakeholders, while AutoViz can be used by analysts during the initial data exploration stage.

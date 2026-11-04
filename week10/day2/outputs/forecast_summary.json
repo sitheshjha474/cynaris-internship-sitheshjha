@@ -1,0 +1,11 @@
+{
+    "market": "NIFTY 50",
+    "ticker": "^NSEI",
+    "observations": 1235,
+    "training_rows": 1175,
+    "testing_rows": 60,
+    "model": "Prophet",
+    "MAE": 930.5845466254789,
+    "RMSE": 1112.4100875289687,
+    "MAPE": 4.046086111447998
+}

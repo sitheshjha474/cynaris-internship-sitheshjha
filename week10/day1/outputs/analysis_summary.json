@@ -1,0 +1,14 @@
+{
+    "dataset": "Synthetic Monthly Sales",
+    "observations": 96,
+    "frequency": "Monthly",
+    "seasonal_period": 12,
+    "adf_statistic": 0.2609285444071329,
+    "adf_p_value": 0.9754791620905205,
+    "stationarity_result": "Non-stationary",
+    "model": "SARIMA(1,1,1)(1,1,1,12)",
+    "training_observations": 84,
+    "testing_observations": 12,
+    "mae": 6.769517529878203,
+    "rmse": 8.57250393803158
+}

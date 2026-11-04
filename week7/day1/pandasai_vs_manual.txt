@@ -1,0 +1,28 @@
+PANDASAI VS MANUAL PANDAS
+=========================
+
+Q1: What is the total sales in INR?
+
+PandasAI: 22855881.78
+
+Manual Pandas: 22855881.78
+
+
+Q2: Which category has the highest total sales?
+
+PandasAI: Electronics — 9776377.50
+
+Manual Pandas: Electronics
+
+
+Q3: Which city has the highest total sales?
+
+PandasAI: Mumbai — 2406912.60
+
+Manual Pandas: Mumbai
+
+
+COMPARISON RESULT
+=================
+
+All 3 PandasAI results matched the Manual Pandas results.
