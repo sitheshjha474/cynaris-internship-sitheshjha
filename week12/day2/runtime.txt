@@ -1,0 +1,18 @@
+BENCHMARK RESULTS
+=================
+
+Dataset: 100,000 rows
+
+Pandas :  0.021165 seconds
+DuckDB :  0.457992 seconds
+Polars :  0.022834 seconds
+
+
+OBSERVATION
+===========
+
+The benchmark shows the execution time of the same five analytical operations
+using Pandas, DuckDB and Polars on the same 100,000-row CSV dataset.
+
+The actual execution time depends on the computer, Python environment and
+system resources used during the test.
